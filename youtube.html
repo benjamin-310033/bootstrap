@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,11 +8,12 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>RandomSelector</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="youtube/style.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
@@ -38,36 +40,32 @@
                 <a class="nav-link" href="rpg.html">RPG</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="mood-test.html">游泳小測驗</a>
+                <a class="nav-link" href="mood-test.html">心情測驗</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="club-course.html">游泳計畫表</a>
             </li>
-            
           </ul>
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>
     </header>
 
     <main role="main">
-      <div class="container marketing">
-        <hr class="featurette-divider">
-            <h1> 游泳影片 </h1>
-            <h2></h2>  
-            <div id="player"></div> <!-- YouTube H H-->
-            <br> 
-            <input id="playButton"  class="btn btn-dark" type="button" value="Play">
-            
-        
-        <hr class="featurette-divider">
-      </div><!-- /.container -->
+        <div class="container marketing">
+            <hr class="featurette-divider">
+            <h1 id="youtube">游泳影片</h1>
+            <h2 id="name"></h2>  <!--歌曲名稱-->
+            <div id="player"></div>  <!--影片播放器-->
+            <br>
+            <input id="playButton" type="button" value="Play">
 
-
-    
+            <hr class="featurette-divider">
+        </div>
+    </main>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -78,10 +76,8 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script> 
-    <script src="youtube/main.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="youtube/playlist.js"></script>
-
+    <script src="youtube/main.js"></script>
   </body>
 </html>
